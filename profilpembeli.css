@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.profile-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fafafa;
+}
+.profile-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+.profile-details {
+    flex: 1;
+}
+.profile-details .name {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.profile-details .info {
+    font-size: 0.9em;
+    color: #666;
+}
+.profile-item .status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 0.9em;
+}
+.status-bought {
+    background-color: #4caf50;
+}
+.status-shipped {
+    background-color: #2196f3;
+}
+.status-cancelled {
+    background-color: #f44336;
+}
+/* Tombol Kembali ke Halaman Utama */
+.back-to-home {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: translateX(-5px);
+}
+
+.arrow-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.back-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #0056b3;
+    transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.back-button:hover:before {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+
+.back-button span {
+    position: relative;
+    z-index: 1;
+}

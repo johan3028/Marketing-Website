@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tim Marketing</title>
+    <link rel="stylesheet" href="team.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>Kenalan dengan Tim Marketing Kami</h1>
+            <p>Tim marketing yang profesional, kreatif, dan penuh semangat untuk membawa produk kami ke pasar!</p>
+        </div>
+    </header>
+
+    <!-- Tim Marketing -->
+    <section class="team-section">
+        <div class="container">
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="profikul.png.webp" alt="Member 1">
+                    <h3>Johan</h3>
+                    <p class="position">Manajer Pemasaran</p>
+                    <p class="description">Johan memiliki pengalaman lebih dari 10 tahun di industri pemasaran, membantu membangun strategi sukses yang meningkatkan penjualan produk.</p>
+                   
+                </div>
+
+                <div class="team-member">
+                    <img src="fahry.jpg" alt="Member 2">
+                    <h3>Fahry</h3>
+                    <p class="position">Koordinator Konten</p>
+                    <p class="description">Fahry adalah seorang ahli dalam pembuatan konten kreatif yang meningkatkan keterlibatan pelanggan dan mempromosikan merek dengan cara yang menarik.</p>
+                   
+                </div>
+
+                <div class="team-member">
+                    <img src="david.jpg" alt="Member 3">
+                    <h3>David</h3>
+                    <p class="position">Spesialis Media Sosial</p>
+                    <p class="description">David mengelola kampanye media sosial dan membantu memperluas jangkauan produk kami di berbagai platform digital.</p>
+                   
+                </div>
+
+                <div class="team-member">
+                    <img src="livia.jpg" alt="Member 4">
+                    <h3>Livia</h3>
+                    <p class="position">Analisis Pemasaran</p>
+                    <p class="description">Livia adalah seorang analis yang mendalami data untuk memahami tren pasar dan membuat keputusan pemasaran yang cerdas.</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tombol Kembali ke Halaman Utama -->
+    <div class="back-to-home">
+        <a href="index.html" class="back-button">
+            <span class="arrow-icon">&#8592;</span> Kembali ke Halaman Utama
+        </a>
+    </div>
+
+    <!-- Modal Detail Anggota Tim -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-name"></h2>
+            <p id="modal-position"></p>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script src="team.js"></script>
+</body>
+</html>

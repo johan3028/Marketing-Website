@@ -1,0 +1,196 @@
+/* Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Header */
+header {
+    background-color: #28a745;
+    color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+/* Bagian Tim */
+.team-section {
+    padding: 40px 0;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Grid untuk Tim */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+/* Anggota Tim */
+.team-member {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.team-member .position {
+    font-size: 1.1em;
+    color: #555;
+}
+
+.team-member .description {
+    font-size: 1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.details-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.details-btn:hover {
+    background-color: #218838;
+}
+
+/* Modal Detail */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+}
+
+.modal-content h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.modal-content p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+.close {
+    font-size: 1.5em;
+    color: #aaa;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close:hover {
+    color: #000;
+}
+
+/* Tombol Kembali ke Halaman Utama */
+.back-to-home {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: translateX(-5px);
+}
+
+.arrow-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.back-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #0056b3;
+    transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.back-button:hover:before {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+
+.back-button span {
+    position: relative;
+    z-index: 1;
+}

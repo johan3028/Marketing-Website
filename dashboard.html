@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#" class="active">Dashboard</a></li>
+                <li><a href="profilpembeli.html">Profil Pembeli</a></li>
+                <li><a href="product.html">Product</a></li>
+                <li><a href="settingsdb.html">Settings</a></li>
+                <li><a href="index.html">Back</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <header>
+                <h1>Selamat datang di Dashboard</h1>
+                <div class="user-info">
+                    <p>Hallo, Admin</p>
+                </div>
+            </header>
+
+            <!-- Stat Panel -->
+            <div class="stat-panels">
+                <div class="panel">
+                    <h3>Total Pengguna</h3>
+                    <p id="userCount">100</p>
+                </div>
+                <div class="panel">
+                    <h3>Transaksi Hari Ini</h3>
+                    <p id="transactionCount">50</p>
+                </div>
+                <div class="panel">
+                    <h3>Pesanan Tertunda</h3>
+                    <p id="orderCount">12</p>
+                </div>
+            </div>
+
+            <!-- Grafik -->
+            <div class="chart">
+                <h3>Statistik Pengguna</h3>
+                <canvas id="myChart" width="400" height="200"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

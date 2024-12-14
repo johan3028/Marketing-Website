@@ -1,0 +1,108 @@
+/* Gaya untuk kontainer notifikasi */
+.notifications-container {
+    margin-top: 50px;
+    width: 80%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Gaya untuk setiap item notifikasi */
+.notification-item {
+    background-color: #f8f9fa;
+    border-left: 5px solid #28a745;
+    margin: 15px 0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Gaya saat item notifikasi dihover */
+.notification-item:hover {
+    background-color: #e2e6ea;
+}
+
+/* Gaya konten dalam notifikasi */
+.notification-content h2 {
+    margin-top: 0;
+    color: #28a745;
+    font-size: 1.2em;
+}
+
+.notification-content p {
+    font-size: 1em;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Tombol aksi */
+.cta-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    text-decoration: none;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+/* Tombol Kembali ke Halaman Utama */
+.back-to-home {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2em;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+    transform: translateX(-5px);
+}
+
+.arrow-icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.back-button:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background-color: #0056b3;
+    transition: width 0.4s, height 0.4s, top 0.4s, left 0.4s;
+    border-radius: 50%;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+}
+
+.back-button:hover:before {
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+}
+
+.back-button span {
+    position: relative;
+    z-index: 1;
+}

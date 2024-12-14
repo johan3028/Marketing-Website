@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Pembelian Produk</title>
+    <link rel="stylesheet" href="buy.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Background -->
+        <div class="background"></div>
+
+        <!-- Product Section -->
+        <div class="product-card">
+            <img src="https://via.placeholder.com/400" alt="Product Image" class="product-img">
+            <h2 class="product-title">Nama Produk</h2>
+            <p class="product-description">Deskripsi singkat produk ini. Produk ini sangat berkualitas dan akan memudahkan hidup Anda.</p>
+            <p class="product-price">Rp 500,000</p>
+            
+            <!-- Quantity Selector -->
+            <div class="quantity-selector">
+                <button onclick="decrement()">-</button>
+                <span id="quantity">1</span>
+                <button onclick="increment()">+</button>
+            </div>
+            
+            <!-- Add to Cart Button -->
+            <button class="add-to-cart" onclick="addToCart()">Tambah ke Keranjang</button>
+        </div>
+        
+        <!-- Cart Modal -->
+        <div class="cart-modal" id="cartModal">
+            <div class="cart-content">
+                <span class="close" onclick="closeCartModal()">&times;</span>
+                <h2>Produk telah ditambahkan ke keranjang!</h2>
+                <p>Jumlah: <span id="modalQuantity">1</span></p>
+                <button class="checkout-btn" onclick="checkout()">Proses Pembayaran</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="buy.js"></script>
+</body>
+</html>

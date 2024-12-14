@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Pengaturan</title>
+    <link rel="stylesheet" href="settingsdb.css">
+</head>
+<body>
+    <div id="main-dashboard" class="dashboard-container">
+        <h1>Dashboard Utama</h1>
+        <button onclick="goToSettings()">Pengaturan</button>
+    </div>
+
+    <div id="settings-dashboard" class="dashboard-container" style="display: none;">
+        <h1>Dashboard Pengaturan</h1>
+        <div class="settings">
+            <div class="setting-item">
+                <label for="theme">Tema Gelap</label>
+                <input type="checkbox" id="theme" onchange="toggleTheme()">
+            </div>
+            <div class="setting-item">
+                <label for="notifications">Notifikasi</label>
+                <input type="checkbox" id="notifications">
+            </div>
+            <div class="setting-item">
+                <label for="privacy">Privasi</label>
+                <input type="checkbox" id="privacy">
+            </div>
+            <div class="setting-item">
+                <button onclick="saveSettings()">Simpan Pengaturan</button>
+                <a href="dashboard.html" onclick="goToDashboard()" class="back-link">Kembali ke Dashboard</a>
+            </div>
+        </div>
+    </div>
+    
+    <script src="settingsdb.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Marketing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Login Marketing</h2>
+        <form id="loginForm" action="#" method="POST">
+            <input type="email" name="email" id="email" class="input-field" placeholder="Email" required>
+            <div class="error" id="emailError">Email tidak valid.</div>
+            
+            <input type="password" name="password" id="password" class="input-field" placeholder="Password" required>
+            <div class="error" id="passwordError">Password tidak boleh kosong.</div>
+
+            <div class="remember-me">
+                <input type="checkbox" name="remember-me" id="rememberMe">
+                <label for="rememberMe">Ingat saya</label>
+            </div>
+
+            <button type="submit" class="btn" id="loginBtn">Login</button>
+        </form>
+        <a href="#" class="forgot-password">Lupa password?</a>
+
+        <div class="social-login">
+            <button id="googleLoginBtn">Login with Google</button>
+        </div>
+
+        <div class="register-link">
+            <p>Belum punya akun? <a href="#">Daftar Sekarang</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

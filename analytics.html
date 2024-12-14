@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics Marketing Dashboard</title>
+    <link rel="stylesheet" href="analytics.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Analytics Marketing Dashboard</h1>
+        </header>
+
+        <div class="charts">
+            <div class="chart-card">
+                <canvas id="salesChart"></canvas>
+            </div>
+            <div class="chart-card">
+                <canvas id="trafficChart"></canvas>
+            </div>
+        </div>
+
+        <div class="data-summary">
+            <h2>Data Summary</h2>
+            <div class="summary-cards">
+                <div class="summary-card">
+                    <h3>Total Sales</h3>
+                    <p id="total-sales">500</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Website Traffic</h3>
+                    <p id="traffic">1500</p>
+                </div>
+                <div class="summary-card">
+                    <h3>Conversion Rate</h3>
+                    <p id="conversion-rate">3.5%</p>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Button to go back to the homepage -->
+<div class="back-button-container">
+    <a href="index.html">
+        <button class="back-button">Kembali ke Halaman Utama</button>
+    </a>
+</div>
+    <script src="analytics.js"></script>
+</body>
+</html>

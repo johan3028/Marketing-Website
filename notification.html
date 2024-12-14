@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifikasi Penawaran dan Diskon</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+
+    <!-- Daftar Penawaran Produk dan Diskon -->
+    <div class="notifications-container">
+        <div class="notification-item" id="offer1">
+            <div class="notification-content">
+                <h2>Diskon 25% Baju</B></h2>
+                <p>Dapatkan diskon <strong>25%</strong> untuk produk <strong>Baju</strong> hanya hari ini!</p>
+                <button class="cta-button" onclick="goToOfferPage('offer1')">Lihat Penawaran</button>
+            </div>
+        </div>
+
+        <div class="notification-item" id="offer2">
+            <div class="notification-content">
+                <h2>Diskon 15% untuk Sepatu Sport</h2>
+                <p>Diskon <strong>15%</strong> untuk pembelian Laptop <strong>Sepatu Sport</strong>. Jangan lewatkan kesempatan ini!</p>
+                <button class="cta-button" onclick="goToOfferPage('offer2')">Lihat Penawaran</button>
+            </div>
+        </div>
+
+        <div class="notification-item" id="offer3">
+            <div class="notification-content">
+                <h2>Penawaran Spesial Celana</h2>
+                <p>Dapatkan <strong>diskon 30%</strong> untuk jam tangan <strong>Celana</strong>. Stok terbatas!</p>
+                <button class="cta-button" onclick="goToOfferPage('offer3')">Lihat Penawaran</button>
+            </div>
+        </div>
+    </div>
+<!-- Tombol Kembali ke Halaman Utama -->
+<div class="back-to-home">
+    <a href="index.html" class="back-button">
+        <span class="arrow-icon">&#8592;</span> Kembali ke Halaman Utama
+    </a>
+</div>
+    <script src="notification.js"></script>
+</body>
+</html>
